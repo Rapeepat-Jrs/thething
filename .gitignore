@@ -1,0 +1,19 @@
+# --- ความลับห้ามเอาขึ้น ---
+.env
+
+# --- สภาพแวดล้อมจำลอง ---
+venv/
+.venv/
+
+# --- ไฟล์ขยะระบบและ Python ---
+__pycache__/
+*.pyc
+.DS_Store
+
+# --- ข้อมูล Database และ User Data (ห้ามเอาขึ้นถ้าเป็น Public Repo) ---
+# แนะนำให้ไม่เอาขึ้น เพราะถ้าไฟล์ใหญ่จะทำให้ Git ช้า และข้อมูลอาจจะรั่วไหล
+*.db
+game_data.db
+*_data.json
+voice_sessions.json
+voice_time_data.json
