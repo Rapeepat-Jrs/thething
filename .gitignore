@@ -1,19 +1,30 @@
-# --- ความลับห้ามเอาขึ้น ---
+# --- ความลับ (Security) ---
 .env
 
-# --- สภาพแวดล้อมจำลอง ---
+# --- สภาพแวดล้อมจำลอง (Environment) ---
 venv/
 .venv/
+env/
 
-# --- ไฟล์ขยะระบบและ Python ---
+# --- ไฟล์ขยะ Python (System Garbage) ---
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 .DS_Store
 
-# --- ข้อมูล Database และ User Data (ห้ามเอาขึ้นถ้าเป็น Public Repo) ---
-# แนะนำให้ไม่เอาขึ้น เพราะถ้าไฟล์ใหญ่จะทำให้ Git ช้า และข้อมูลอาจจะรั่วไหล
+# --- ข้อมูล Database (Local Data) ---
+# เราจะไม่เอาไฟล์ที่มีข้อมูลคนเล่นขึ้น GitHub
 *.db
 game_data.db
-*_data.json
+
+# --- ไฟล์ข้อมูล JSON (User Data) ---
+# บล็อกไฟล์ JSON ที่เก็บข้อมูลสมาชิก
+*.json
+economy_data.json
+milestone_data.json
+pet_data.json
 voice_sessions.json
 voice_time_data.json
+voice_time_data_data.json
+# หรือจะใช้ *.json ถ้าต้องการบล็อกทุกไฟล์ JSON ในโฟลเดอร์หลัก
